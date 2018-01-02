@@ -6,3 +6,13 @@
     messagingSenderId: "201803835327",
   };
   firebase.initializeApp(config);
+  
+  const messaging = firebase.messaging();
+
+  messaging.requestPermission()
+  .then(function(){
+  	console.log('hello')
+  })
+  .catch(function(err){
+  	console.log('error message')
+  })
