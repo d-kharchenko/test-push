@@ -12,6 +12,7 @@
   messaging.requestPermission()
   .then(function(){
   	console.log('hello')
+    return messaging.getToken()
   })
   .then(function(token){
     console.log(token)
