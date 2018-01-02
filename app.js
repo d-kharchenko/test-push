@@ -13,6 +13,9 @@
   .then(function(){
   	console.log('hello')
   })
+  .then(function(token){
+    console.log(token)
+  })
   .catch(function(err){
   	console.log('error message')
   })
