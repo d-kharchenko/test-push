@@ -1,3 +1,14 @@
 {
-  "gcm_sender_id": "201803835327"
+  "name": "Суші Кошик",
+  "short_name": "Суші Кошик",
+  "lang": "uk",
+  "start_url": "http://test.island-ukraine.com/",
+  "display": "standalone",
+  "theme_color": "#fc5f07",
+  "icons": [
+    {
+      "src": "https://cdn2.iconfinder.com/data/icons/apps-3/128/Sushi.png",
+      "size": "128x128"
+    }
+  ]
 }
