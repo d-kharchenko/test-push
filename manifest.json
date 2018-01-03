@@ -2,7 +2,7 @@
   "name": "Суші Кошик",
   "short_name": "Суші Кошик",
   "lang": "uk",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "theme_color": "#fc5f07",
   "icons": [
