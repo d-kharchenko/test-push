@@ -40,7 +40,7 @@ if ('serviceWorker' in navigator) {
     .register('pwabuilder-sw.js')
     .then(reg => {
       console.log('service work');
-      reg.pushManager.subscride({userVisibleOnly: true})
+      reg.pushManager.subscribe({userVisibleOnly: true})
       .then(function(sub){
         console.log('update server', sub)
       }).catch(function(error){
