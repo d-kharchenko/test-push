@@ -1,8 +1,8 @@
 {
   "name": "Суші Кошик",
-  "short_name": "Суші Кошик",
+  "short_name": "sushi",
   "lang": "uk",
-  "start_url": "index.html",
+  "start_url": "https://d-kharchenko.github.io/test-push/index.html",
   "display": "standalone",
   "theme_color": "#fc5f07",
   "icons": [
@@ -11,5 +11,6 @@
       "sizes": "144x144",
       "type": "image/png"
     }
-  ]
+  ],
+  "orientation": "any"
 }
