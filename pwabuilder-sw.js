@@ -31,6 +31,20 @@ self.addEventListener('fetch', function(evt) {
   evt.waitUntil(update(evt.request));
 });
 
+self.addEventListener('push', evt => {
+  evt.waitUntil(
+    self.registration.showNotification('Sushi', {
+      body: 'hello this my Sushi',
+      icon: 'https://cdn2.iconfinder.com/data/icons/apps-3/128/Sushi.png'
+    })
+    )
+});
+
+self.addEventListener('notificationclick', evt => {
+  evt.notification.close();
+  return clients.openWindow('http://test.island-ukraine.com/');
+});
+
 
 function precache() {
   return caches.open(CACHE).then(function (cache) {
