@@ -1,4 +1,18 @@
- var config = {
+var isTooSoon = true;
+window.addEventListener("beforeinstallprompt", function(e) { 
+  if (isTooSoon) {
+    e.preventDefault(); // Prevents prompt display 
+    // Prompt later instead: 
+    setTimeout(function() { 
+      isTooSoon = false; 
+      e.prompt(); // Shows prompt 
+    }, 1000); 
+  } 
+
+  // The event was re-dispatched in response to our request 
+  // ... 
+}); 
+var config = {
     apiKey: "AAAALvxyJ78:APA91bFKjtFmQRluBOMjOSczBj2kmqmQv0_GgN699fy2ohJra0WPdHjICI35GXGwhkL1yxRbIjKc0dakICq6XtERZ9HMA0WovlSJGL8xBcQPkkaFru9LDEFPlUz3ZZ1R4fQlu2cnVldK",
     authDomain: "sushi-97014.firebaseio.com/",
     databaseURL: "https://sushi-97014.firebaseio.com/",
