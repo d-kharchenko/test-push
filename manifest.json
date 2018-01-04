@@ -2,7 +2,7 @@
   "name": "Суші Кошик",
   "short_name": "sushi",
   "lang": "uk",
-  "start_url": "https://sushi.koshik.sumy.ua/index.html",
+  "start_url": "https://sushi.koshik.sumy.ua/catalog/",
   "display": "standalone",
   "theme_color": "#fc5f07",
   "icons": [
