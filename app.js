@@ -37,7 +37,7 @@
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-    .register('/pwabuilder-sw.js')
+    .register('pwabuilder-sw.js')
     .then(reg => {
       console.log('service work');
       reg.pushManager.subscribe({userVisibleOnly: true})
