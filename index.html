@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript">
-		//This is the service worker with the Cache-first network
-
-		//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-		if (navigator.serviceWorker.controller) {
-		  console.log('[PWA Builder] active service worker found, no need to register')
-		} else {
-
-		//Register the ServiceWorker
-		  navigator.serviceWorker.register('pwabuilder-sw.js').then(function(reg) {
-		    console.log('Service worker has been registered for scope:'+ reg.scope);
-		  });
-	}
-	</script>
+	
 	<meta http-equiv="Cache-Control" content="max-age=10, must-revalidate" />
 	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
@@ -42,5 +29,19 @@
 	<div class="wrapper">
 		<p>hello</p>
 	</div>
+	<script type="text/javascript">
+		//This is the service worker with the Cache-first network
+
+		//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
+		if (navigator.serviceWorker.controller) {
+		  console.log('[PWA Builder] active service worker found, no need to register')
+		} else {
+
+		//Register the ServiceWorker
+		  navigator.serviceWorker.register('pwabuilder-sw.js').then(function(reg) {
+		    console.log('Service worker has been registered for scope:'+ reg.scope);
+		  });
+	}
+	</script>
 </body>
 </html>
