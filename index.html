@@ -33,7 +33,8 @@
 		<button class="btn">Disable Push Messaging</button>
 	</div>
 	<script type="text/javascript">
-		const pushButton = document.querySelector('.btn')
+		const pushButton = document.querySelector('.btn');
+		const applicationServerPublicKey = 'BIEMiDcCg81Qym5xnzl0BGCcySD-ww4Y-Vj3JcEmzan22xrs1UuHeds37TY_NvsDMLJijmArcvyXEaUs9HJDqrk'
 		function updateBtn() {
 			  if (isSubscribed) {
 			    pushButton.textContent = 'Disable Push Messaging';
@@ -44,7 +45,7 @@
 			  pushButton.disabled = false;
 			}
 		function subscribeUser() {
-			  const applicationServerKey =urlB64ToUint8Array('BJMPB3-SQAZFVINbIAWEHw9CwD3AyZ7Ulqx2hNbxufhU8-xBtURxB-05msSbH79_WyO7J5pIaP0hXgrgoUUg9j4');
+			  const applicationServerKey = urlB64ToUint8Array(applicationServerPublicKey);
 			  swRegistration.pushManager.subscribe({
 			    userVisibleOnly: true,
 			    applicationServerKey: applicationServerKey
