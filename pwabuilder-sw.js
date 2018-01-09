@@ -35,7 +35,7 @@ self.addEventListener('push', evt => {
   evt.waitUntil(
     self.registration.showNotification('Sushi', {
       body: 'hello this my Sushi',
-      icon: 'https://cdn2.iconfinder.com/data/icons/apps-3/128/Sushi.png'
+      icon: 'img/sushi-256.png'
     })
     )
 });
