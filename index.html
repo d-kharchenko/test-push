@@ -30,9 +30,10 @@
 		<p>hello</p>
 	</div>
 	<div>
-		<button>Add notification</button>
+		<button class="btn">Add notification</button>
 	</div>
 	<script type="text/javascript">
+		const pushButton = document.querySelector('.btn')
 		function updateBtn() {
 			  if (isSubscribed) {
 			    pushButton.textContent = 'Disable Push Messaging';
