@@ -8,8 +8,9 @@
 	
 	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js"></script> -->
-<!-- 	<script type="text/javascript" src="worker.js"></script>-->
+	
 	<script type="text/javascript" src="app.js"></script> 
+	<script type="text/javascript" src="firebase-messaging-sw.js"></script>
 	<link rel="manifest" href="manifest.json">
 
 <meta name="mobile-web-app-capable" content="yes">
@@ -34,6 +35,7 @@
 		<button class="btn">Disable Push Messaging</button>
 	</div>
 <!-- 	<script type="text/javascript">
+
 		const pushButton = document.querySelector('.btn');
 		const applicationServerPublicKey = 'BIEMiDcCg81Qym5xnzl0BGCcySD-ww4Y-Vj3JcEmzan22xrs1UuHeds37TY_NvsDMLJijmArcvyXEaUs9HJDqrk'
 		let isSubscribed = false;
