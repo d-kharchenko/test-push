@@ -6,7 +6,7 @@ importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js');
     databaseURL: "https://sushi-97014.firebaseio.com",
     projectId: "sushi-97014",
     storageBucket: "sushi-97014.appspot.com",
-    messagingSenderId: "201803835327"
+    messagingSenderId: "103953800507"
   };
   firebase.initializeApp(config);
   const messaging = firebase.messaging();
