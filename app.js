@@ -20,7 +20,7 @@
     databaseURL: "https://sushi-97014.firebaseio.com",
     projectId: "sushi-97014",
     storageBucket: "sushi-97014.appspot.com",
-    messagingSenderId: "103953800507"
+    messagingSenderId: "201803835327"
   };
   firebase.initializeApp(config);
   const messaging = firebase.messaging();
