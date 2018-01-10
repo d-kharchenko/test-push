@@ -1,7 +1,7 @@
 importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js');
  var config = {
-    apiKey: "AIzaSyCFIg4zZ5-a5a56XWL1UC5KEc0qBJQjuog",
+    apiKey: "AIzaSyATfSHLPelSo8mkaoUJt-Sc2FQaz_1mKEQ",
     authDomain: "sushi-97014.firebaseapp.com",
     databaseURL: "https://sushi-97014.firebaseio.com",
     projectId: "sushi-97014",
