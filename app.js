@@ -12,6 +12,24 @@
   // The event was re-dispatched in response to our request 
   // ... 
 // }); 
+if ('serviceWorker' in navigator && 'PushManager' in window) {
+		  console.log('Service Worker and Push is supported');
+
+		  navigator.serviceWorker.register('pwabuilder-sw.js')
+		  .then(function(swReg) {
+		    console.log('Service Worker is registered', swReg);
+
+		    swRegistration = swReg;
+		    initializeUI()
+		  })
+		  .catch(function(error) {
+		    console.error('Service Worker Error', error);
+		  });
+		} else {
+		  console.warn('Push messaging is not supported');
+		  pushButton.textContent = 'Push Not Supported';
+		}
+
  var config = {
     apiKey: "AIzaSyCFIg4zZ5-a5a56XWL1UC5KEc0qBJQjuog",
     authDomain: "sushi-97014.firebaseapp.com",
