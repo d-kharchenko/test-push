@@ -33,7 +33,7 @@
     console.log(token)
   })
   .catch(function(err){
-  	console.log('error message')
+  	console.log('error message', err)
   })
 
 
